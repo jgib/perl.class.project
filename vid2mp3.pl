@@ -1,6 +1,6 @@
 #!/usr/bin/perl
-use strict;
-use warnings;
+use strict;			#required ffmpeg to be installed and in path
+use warnings;			#it should also require libmp3lame
 use Shell;
 
 sub main {
