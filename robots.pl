@@ -3,7 +3,7 @@ use strict;
 use warnings;
 use LWP::Simple;
 
-print "\Enter URL: ";
+print "\nEnter URL: ";
 my $url = <>;
 chomp $url;
 my $html = get("http://".$url."/robots.txt");
