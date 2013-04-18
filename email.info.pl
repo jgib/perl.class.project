@@ -38,11 +38,11 @@ sub main {
 	&input;
 	$record="MX";
 	&set_record;
-	print "\n==========\nMail Servers\n==========\n";
+	print "\n============\nMail Servers\n============\n";
 	&mx;
 	$record="TXT";
 	&set_record;
-	print "\n==========\nSPF Records\n==========\n";;
+	print "\n============\nSPF  Records\n============\n";;
 	&spf;
 }
 
