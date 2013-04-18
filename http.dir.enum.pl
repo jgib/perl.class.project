@@ -22,8 +22,7 @@ sub close_tmp {
 }
 sub search {
 	while(<TMP>) {
-		#if($_=~m/href="(https?:\/\/\w*?\.?$url.*?)">/g) {
-		if($_=~m/href="(.*?)">/g){
+		if($_=~m/href="(.*?)[" ]/g){
 		$url[$i]=$1;
 			$i++;
 		}
