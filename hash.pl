@@ -10,7 +10,7 @@ my $hash = <>;
 chomp $hash;
 
 given ($hash) {
-  when (/[a-zA-F0-9]{128}/)	{ say "SHA 512 or Whirlpool\n" }
+	when (/[a-zA-F0-9]{128}/)	{ say "SHA 512 or Whirlpool\n" }
 	when (/[a-zA-F0-9]{96}/)	{ say "SHA 384\n" }
 	when (/[a-zA-F0-9]{64}/)	{ say "SHA 256\n" }
 	when (/[a-fA-F0-9]{56}/)	{ say "SHA 224\n" }
